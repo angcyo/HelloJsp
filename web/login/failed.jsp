@@ -11,11 +11,15 @@
     <title>登录失败</title>
 </head>
 <body>
-<h6>登录失败</h6>
-<h5>用户名:<%=request.getParameter("name") %>
-</h5>
-<h5>密&nbsp;码:<%=request.getParameter("pass") %>
-</h5>
-<a href="/login/login.jsp">返回重新登录</a>
+<div style="; text-align: center">
+    <div style="display: inline-block;">
+        <h6>登录失败</h6>
+        <h5>用户名:<%=request.getParameter("name") %>
+        </h5>
+        <h5>密&nbsp;码:<%=request.getParameter("pass") %>
+        </h5>
+        <a href="/login/login.jsp">返回重新登录</a>
+    </div>
+</div>
 </body>
 </html>

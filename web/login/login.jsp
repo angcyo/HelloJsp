@@ -15,12 +15,19 @@
     System.out.println("Hello Jsp Pager");
     System.out.println(request.getContextPath());
 %>
-
-<form action="<%=request.getContextPath() %>/loginServlet" method="post">
-    userName<input type="text" name="name"/><br/>
-    userPass<input type="password" name="pass"/><br/>
-    <input type="submit" value="登录"/>
-    <input type="reset" value="重置"/>
-</form>
+<style type="text/css">
+    * {
+        padding: 10px;
+        margin: 10px;
+    }
+</style>
+<div style="; text-align: center">
+    <form action="<%=request.getContextPath() %>/loginServlet" method="post">
+        userName<input type="text" name="name"/><br/>
+        userPass<input type="password" name="pass"/><br/>
+        <input type="submit" value="登录"/>
+        <input type="reset" value="重置"/>
+    </form>
+</div>
 </body>
 </html>
