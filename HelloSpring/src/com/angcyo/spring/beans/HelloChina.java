@@ -8,6 +8,6 @@ import com.angcyo.spring.inter.IInterface;
 public class HelloChina implements IInterface {
     @Override
     public String sayHello() {
-        return null;
+        return "你好!";
     }
 }

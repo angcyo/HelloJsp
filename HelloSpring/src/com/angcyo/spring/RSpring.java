@@ -1,5 +1,7 @@
 package com.angcyo.spring;
 
+import com.angcyo.spring.module.Person;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
 
 /**
@@ -8,6 +10,23 @@ import org.springframework.context.support.FileSystemXmlApplicationContext;
 public class RSpring {
     public static void main(String... args) {
         System.out.println("Hello Spring");
-        FileSystemXmlApplicationContext context = new FileSystemXmlApplicationContext();
+        try {
+            /*两个类,加载的路径不一样哦;*/
+            FileSystemXmlApplicationContext context = new FileSystemXmlApplicationContext("HelloSpring/config/config.xml");
+            Person person = (Person) context.getBean("person");
+            person.sayHello();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        try {
+            /*推荐使用这种方法*/
+            ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("config.xml");
+            Person person = (Person) context.getBean("person");
+            person.sayHello();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+
     }
 }

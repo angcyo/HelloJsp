@@ -8,6 +8,6 @@ import com.angcyo.spring.inter.IInterface;
 public class HelloWord implements IInterface {
     @Override
     public String sayHello() {
-        return null;
+        return "Hi!";
     }
 }
