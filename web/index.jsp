@@ -12,6 +12,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>$Title$</title>
+    <link rel="shortcut icon" href="favicon.ico">
 </head>
 <body>
 $END1111$ index 2015-12-27 14:43:48

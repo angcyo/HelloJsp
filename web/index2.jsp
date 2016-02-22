@@ -9,6 +9,7 @@
 <html>
   <head>
     <title>$Title2222$</title>
+    <link rel="shortcut icon" href="favicon.ico">
   </head>
   <body>
   $END1111---------------index2.jsp$
