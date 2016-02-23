@@ -1,12 +1,9 @@
 package com.angcyo.jdbc;
 
-import java.io.IOException;
-import java.io.InputStream;
+import com.angcyo.utils.TextUtils;
+
 import java.io.PrintStream;
-import java.sql.DriverManager;
 import java.sql.SQLException;
-import java.util.ArrayList;
-import java.util.Properties;
 
 /**
  * Created by angcyo on 16-02-19-019.
@@ -15,14 +12,14 @@ public class Demo {
     public static PrintStream R = System.out;
 
     public static void main(String... args) {
-        try {
-            Class.forName("com.mysql.jdbc.Driver");
-            DriverManager.getConnection("jdbc:mysql://%s/%s");
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            Class.forName("com.mysql.jdbc.Driver");
+//            DriverManager.getConnection("jdbc:mysql://%s/%s");
+//        } catch (ClassNotFoundException e) {
+//            e.printStackTrace();
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//        }
 
 
         Thread.setDefaultUncaughtExceptionHandler(new Thread.UncaughtExceptionHandler() {
@@ -33,24 +30,24 @@ public class Demo {
         });
         connect();
 
-        try {
-            Properties properties = new Properties();
-            InputStream inputStream = Demo.class.getClassLoader().getResourceAsStream("jdbcconfig.properties");
-            InputStream inputStream2 = Demo.class.getClassLoader().getResourceAsStream("test.java1");
-            properties.load(inputStream2);
-            String name = properties.getProperty("name");
-            String pass = properties.getProperty("pass");
-            properties.setProperty("na", "adf");
-            String na = properties.getProperty("na");
-            String na2 = properties.getProperty("na");
-            int nam = 120;
-            func(Integer.valueOf(nam));
-            func(nam);
-            func(new TestBean());
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+//        try {
+//            Properties properties = new Properties();
+//            InputStream inputStream = Demo.class.getClassLoader().getResourceAsStream("jdbcconfig.properties");
+//            InputStream inputStream2 = Demo.class.getClassLoader().getResourceAsStream("test.java1");
+//            properties.load(inputStream2);
+//            String name = properties.getProperty("name");
+//            String pass = properties.getProperty("pass");
+//            properties.setProperty("na", "adf");
+//            String na = properties.getProperty("na");
+//            String na2 = properties.getProperty("na");
+//            int nam = 120;
+//            func(Integer.valueOf(nam));
+//            func(nam);
+//            func(new TestBean());
+//
+//        } catch (IOException e) {
+//            e.printStackTrace();
+//        }
     }
 
     public static <T> void func(T objects) {
@@ -104,26 +101,26 @@ public class Demo {
 //                        }
 //                    }).close();
 
-//            RJdbc.init("192.168.1.11:3306", "lulc_db_test1", "angcyo", "angcyo")
-//                    .query("SELECT * FROM name_table_test1", new JsonStringResult() {
-//                                @Override
-//                                public void onJsonStringResult(String jsonString) {
-//                                    if (TextUtils.isEmpty(jsonString)) {
-//
-//                                    }
-//                                }
-//                            }
-//                    ).close();
-
             RJdbc.init("192.168.1.11:3306", "lulc_db_test1", "angcyo", "angcyo")
-                    .query("SELECT * FROM name_table_test1", new RJdbc.JsonObjectResult<TestBean>() {
-
+                    .query("SELECT * FROM name_table_test1", new RJdbc.JsonStringResult() {
                                 @Override
-                                public void onJsonObjectResult(ArrayList<TestBean> lists) {
-
+                                public void onJsonStringResult(String jsonString) {
+                                    if (!TextUtils.isEmpty(jsonString)) {
+                                        R.println(jsonString);
+                                    }
                                 }
                             }
                     ).close();
+
+//            RJdbc.init("192.168.1.11:3306", "lulc_db_test1", "angcyo", "angcyo")
+//                    .query("SELECT * FROM name_table_test1", new RJdbc.JsonObjectResult<TestBean>() {
+//
+//                                @Override
+//                                public void onJsonObjectResult(ArrayList<TestBean> lists) {
+//
+//                                }
+//                            }
+//                    ).close();
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         } catch (SQLException e) {
