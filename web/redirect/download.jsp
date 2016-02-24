@@ -17,7 +17,7 @@
 </div>
 
 <script language="javascript">
-    //    window.open("http://mirrors.hust.edu.cn/apache/tomcat/tomcat-9/v9.0.0.M3/bin/apache-tomcat-9.0.0.M3.exe");
+    //     window.open("http://mirrors.hust.edu.cn/apache/tomcat/tomcat-9/v9.0.0.M3/bin/apache-tomcat-9.0.0.M3.exe");
     location.href = "http://mirrors.hust.edu.cn/apache/tomcat/tomcat-9/v9.0.0.M3/bin/apache-tomcat-9.0.0.M3.exe";
 </script>
 
