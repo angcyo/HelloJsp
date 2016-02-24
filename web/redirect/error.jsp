@@ -11,6 +11,8 @@
     <title>错误界面</title>
 </head>
 <body>
-
+<%
+    response.setHeader();
+%>
 </body>
 </html>
