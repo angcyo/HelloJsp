@@ -4,6 +4,19 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
          version="3.1">
 
+    <display-name>Hello Jsp By Angcyo</display-name>
+
+    <!--struts2 配置项-->
+    <filter>
+        <filter-name>struts2</filter-name>
+        <filter-class>org.apache.struts2.dispatcher.ng.filter.StrutsPrepareAndExecuteFilter</filter-class>
+    </filter>
+
+    <filter-mapping>
+        <filter-name>struts2</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
     <!--过滤器的配置-->
     <!--<filter>-->
         <!--<filter-name>FirstFilter</filter-name>-->
@@ -14,18 +27,18 @@
         <!--<url-pattern>/*</url-pattern>-->
     <!--</filter-mapping>-->
 
-    <filter>
-        <filter-name>EncodingFilter</filter-name>
-        <filter-class>com.angcyo.filter.EncodingFilter</filter-class>
-        <init-param>
-            <param-name>encode</param-name>
-            <param-value>utf-8</param-value>
-        </init-param>
-    </filter>
-    <filter-mapping>
-        <filter-name>EncodingFilter</filter-name>
-        <url-pattern>/*</url-pattern>
-    </filter-mapping>
+    <!--<filter>-->
+        <!--<filter-name>EncodingFilter</filter-name>-->
+        <!--<filter-class>com.angcyo.filter.EncodingFilter</filter-class>-->
+        <!--<init-param>-->
+            <!--<param-name>encode</param-name>-->
+            <!--<param-value>utf-8</param-value>-->
+        <!--</init-param>-->
+    <!--</filter>-->
+    <!--<filter-mapping>-->
+        <!--<filter-name>EncodingFilter</filter-name>-->
+        <!--<url-pattern>/*</url-pattern>-->
+    <!--</filter-mapping>-->
 
     <!--配置错误页面-->
     <error-page>

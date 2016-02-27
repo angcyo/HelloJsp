@@ -1,4 +1,4 @@
-<%--
+<%@ page import="org.omg.IOP.ServiceContext" %><%--
   Created by IntelliJ IDEA.
   User: angcyo
   Date: 2016-02-24 00:14
@@ -12,7 +12,12 @@
 </head>
 <body>
 <%
-    response.setHeader();
+    response.setHeader("","");
+//    PageContext;
+//    ServiceContext;
+//    application;
+//    ServletContext;
+//    pageContext.
 %>
 </body>
 </html>

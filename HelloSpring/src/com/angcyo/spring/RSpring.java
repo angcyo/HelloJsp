@@ -3,6 +3,8 @@ package com.angcyo.spring;
 import com.angcyo.spring.module.Person;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
+import org.springframework.core.io.Resource;
+import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 
 /**
  * Created by angcyo on 16-02-22-022.
@@ -27,6 +29,9 @@ public class RSpring {
             e.printStackTrace();
         }
 
+        PathMatchingResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
+        Resource resource = resolver.getResource("classpath:config.xml");
 
+//        BeanFactory
     }
 }

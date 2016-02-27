@@ -21,13 +21,40 @@
         margin: 10px;
     }
 </style>
+
+<%--Servlet 登录测试--%>
 <div style="; text-align: center">
+    <h1>Servlet 登录测试</h1>
     <form action="<%=request.getContextPath() %>/loginServlet" method="post">
-        userName<input type="text" name="name"/><br/>
+        name<input type="text" name="name"/><br/>
         userPass<input type="password" name="pass"/><br/>
         <input type="submit" value="登录"/>
         <input type="reset" value="重置"/>
     </form>
 </div>
+
+
+<%--Struts2 登录测试--%>
+<div style="; text-align: center">
+    <h1>Struts2 登录测试</h1>
+    <form action="<%=request.getContextPath() %>/login/login.rsen" method="post">
+        name<input type="text" name="name"/><br/>
+        userPass<input type="password" name="pass"/><br/>
+        <input type="submit" value="登录"/>
+        <input type="reset" value="重置"/>
+    </form>
+</div>
+
+<%--Struts2 mode 登录测试--%>
+<div style="; text-align: center">
+    <h1>Struts2 mode 登录测试</h1>
+    <form action="<%=request.getContextPath() %>/login/modeLogin.rsen" method="post">
+        name<input type="text" name="name"/><br/>
+        userPass<input type="password" name="pass"/><br/>
+        <input type="submit" value="登录"/>
+        <input type="reset" value="重置"/>
+    </form>
+</div>
+
 </body>
 </html>
