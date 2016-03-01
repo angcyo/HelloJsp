@@ -79,4 +79,12 @@
         <servlet-name>LoginServlet</servlet-name>
         <url-pattern>/loginServlet</url-pattern>
     </servlet-mapping>
+    <servlet>
+        <servlet-name>ApptoxServlet</servlet-name>
+        <servlet-class>com.angcyo.servlet.ApptoxServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ApptoxServlet</servlet-name>
+        <url-pattern>/apptox.app</url-pattern>
+    </servlet-mapping>
 </web-app>
