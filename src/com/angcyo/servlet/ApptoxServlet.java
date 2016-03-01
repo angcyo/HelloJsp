@@ -20,6 +20,71 @@ public class ApptoxServlet extends HttpServlet {
                 "    \"error_code\": 0,\n" +
                 "    \"list\": [\n" +
                 "        {\n" +
+                "            \"GroupCreator\": {\n" +
+                "                \"uid\": \"106\"\n" +
+                "            },\n" +
+                "            \"GroupMenmber\": [\n" +
+                "                {\n" +
+                "                    \"activity\": \"7\",\n" +
+                "                    \"create_time\": \"1455938014\",\n" +
+                "                    \"group_id\": \"6\",\n" +
+                "                    \"id\": \"11\",\n" +
+                "                    \"isCreator\": \"1\",\n" +
+                "                    \"last_view\": \"1456465127\",\n" +
+                "                    \"position\": \"3\",\n" +
+                "                    \"status\": \"1\",\n" +
+                "                    \"uid\": \"106\",\n" +
+                "                    \"update_time\": \"1455938014\",\n" +
+                "                    \"user\": {\n" +
+                "                        \"avatar128\": \"/opensns/Public/images/default_avatar_128_128.jpg\",\n" +
+                "                        \"avatar256\": \"/opensns/Public/images/default_avatar_256_256.jpg\",\n" +
+                "                        \"avatar32\": \"/opensns/Public/images/default_avatar_32_32.jpg\",\n" +
+                "                        \"avatar512\": \"/opensns/Public/images/default_avatar_512_512.jpg\",\n" +
+                "                        \"avatar64\": \"/opensns/Public/images/default_avatar_64_64.jpg\",\n" +
+                "                        \"fans\": \"0\",\n" +
+                "                        \"following\": \"0\",\n" +
+                "                        \"nickname\": \"18253553110\",\n" +
+                "                        \"real_nickname\": \"18253553110\",\n" +
+                "                        \"score1\": \"81\",\n" +
+                "                        \"space_link\": \"18253553110\",\n" +
+                "                        \"space_mob_url\": \"/opensns/index.php?s=/mob/user/index/uid/106.html\",\n" +
+                "                        \"space_url\": \"/opensns/index.php?s=/ucenter/index/index/uid/106.html\",\n" +
+                "                        \"title\": \"Lv2 试用\",\n" +
+                "                        \"uid\": \"106\",\n" +
+                "                        \"weibocount\": \"3\"\n" +
+                "                    }\n" +
+                "                },\n" +
+                "                {\n" +
+                "                    \"activity\": \"1\",\n" +
+                "                    \"create_time\": \"1456293887\",\n" +
+                "                    \"group_id\": \"6\",\n" +
+                "                    \"id\": \"13\",\n" +
+                "                    \"isCreator\": \"0\",\n" +
+                "                    \"last_view\": \"1456295427\",\n" +
+                "                    \"position\": \"1\",\n" +
+                "                    \"status\": \"1\",\n" +
+                "                    \"uid\": \"1\",\n" +
+                "                    \"update_time\": \"1456293887\",\n" +
+                "                    \"user\": {\n" +
+                "                        \"avatar128\": \"/opensns/Public/images/default_avatar_128_128.jpg\",\n" +
+                "                        \"avatar256\": \"/opensns/Public/images/default_avatar_256_256.jpg\",\n" +
+                "                        \"avatar32\": \"/opensns/Public/images/default_avatar_32_32.jpg\",\n" +
+                "                        \"avatar512\": \"/opensns/Public/images/default_avatar_512_512.jpg\",\n" +
+                "                        \"avatar64\": \"/opensns/Public/images/default_avatar_64_64.jpg\",\n" +
+                "                        \"fans\": \"0\",\n" +
+                "                        \"following\": \"1\",\n" +
+                "                        \"nickname\": \"admin\",\n" +
+                "                        \"real_nickname\": \"admin\",\n" +
+                "                        \"score1\": \"196\",\n" +
+                "                        \"space_link\": \"admin\",\n" +
+                "                        \"space_mob_url\": \"/opensns/api.php?s=/Mob/User/index/uid/1.html\",\n" +
+                "                        \"space_url\": \"/opensns/api.php?s=/Ucenter/Index/index/uid/1.html\",\n" +
+                "                        \"title\": \"Lv3 转正\",\n" +
+                "                        \"uid\": \"1\",\n" +
+                "                        \"weibocount\": \"24\"\n" +
+                "                    }\n" +
+                "                }\n" +
+                "            ],\n" +
                 "            \"activity\": \"8\",\n" +
                 "            \"allow_user_group\": \"\",\n" +
                 "            \"background\": false,\n" +
@@ -51,6 +116,41 @@ public class ApptoxServlet extends HttpServlet {
                 "            }\n" +
                 "        },\n" +
                 "        {\n" +
+                "            \"GroupCreator\": {\n" +
+                "                \"uid\": \"1\"\n" +
+                "            },\n" +
+                "            \"GroupMenmber\": [\n" +
+                "                {\n" +
+                "                    \"activity\": \"2\",\n" +
+                "                    \"create_time\": \"1455945707\",\n" +
+                "                    \"group_id\": \"7\",\n" +
+                "                    \"id\": \"12\",\n" +
+                "                    \"isCreator\": \"1\",\n" +
+                "                    \"last_view\": \"1456469287\",\n" +
+                "                    \"position\": \"3\",\n" +
+                "                    \"status\": \"1\",\n" +
+                "                    \"uid\": \"1\",\n" +
+                "                    \"update_time\": \"1455945707\",\n" +
+                "                    \"user\": {\n" +
+                "                        \"avatar128\": \"/opensns/Public/images/default_avatar_128_128.jpg\",\n" +
+                "                        \"avatar256\": \"/opensns/Public/images/default_avatar_256_256.jpg\",\n" +
+                "                        \"avatar32\": \"/opensns/Public/images/default_avatar_32_32.jpg\",\n" +
+                "                        \"avatar512\": \"/opensns/Public/images/default_avatar_512_512.jpg\",\n" +
+                "                        \"avatar64\": \"/opensns/Public/images/default_avatar_64_64.jpg\",\n" +
+                "                        \"fans\": \"0\",\n" +
+                "                        \"following\": \"1\",\n" +
+                "                        \"nickname\": \"admin\",\n" +
+                "                        \"real_nickname\": \"admin\",\n" +
+                "                        \"score1\": \"196\",\n" +
+                "                        \"space_link\": \"admin\",\n" +
+                "                        \"space_mob_url\": \"/opensns/api.php?s=/Mob/User/index/uid/1.html\",\n" +
+                "                        \"space_url\": \"/opensns/api.php?s=/Ucenter/Index/index/uid/1.html\",\n" +
+                "                        \"title\": \"Lv3 转正\",\n" +
+                "                        \"uid\": \"1\",\n" +
+                "                        \"weibocount\": \"24\"\n" +
+                "                    }\n" +
+                "                }\n" +
+                "            ],\n" +
                 "            \"activity\": \"2\",\n" +
                 "            \"allow_user_group\": \"\",\n" +
                 "            \"background\": false,\n" +
@@ -82,6 +182,41 @@ public class ApptoxServlet extends HttpServlet {
                 "            }\n" +
                 "        },\n" +
                 "        {\n" +
+                "            \"GroupCreator\": {\n" +
+                "                \"uid\": \"1\"\n" +
+                "            },\n" +
+                "            \"GroupMenmber\": [\n" +
+                "                {\n" +
+                "                    \"activity\": \"0\",\n" +
+                "                    \"create_time\": \"1456369343\",\n" +
+                "                    \"group_id\": \"8\",\n" +
+                "                    \"id\": \"14\",\n" +
+                "                    \"isCreator\": \"1\",\n" +
+                "                    \"last_view\": \"1456369345\",\n" +
+                "                    \"position\": \"3\",\n" +
+                "                    \"status\": \"1\",\n" +
+                "                    \"uid\": \"1\",\n" +
+                "                    \"update_time\": \"1456369343\",\n" +
+                "                    \"user\": {\n" +
+                "                        \"avatar128\": \"/opensns/Public/images/default_avatar_128_128.jpg\",\n" +
+                "                        \"avatar256\": \"/opensns/Public/images/default_avatar_256_256.jpg\",\n" +
+                "                        \"avatar32\": \"/opensns/Public/images/default_avatar_32_32.jpg\",\n" +
+                "                        \"avatar512\": \"/opensns/Public/images/default_avatar_512_512.jpg\",\n" +
+                "                        \"avatar64\": \"/opensns/Public/images/default_avatar_64_64.jpg\",\n" +
+                "                        \"fans\": \"0\",\n" +
+                "                        \"following\": \"1\",\n" +
+                "                        \"nickname\": \"admin\",\n" +
+                "                        \"real_nickname\": \"admin\",\n" +
+                "                        \"score1\": \"196\",\n" +
+                "                        \"space_link\": \"admin\",\n" +
+                "                        \"space_mob_url\": \"/opensns/api.php?s=/Mob/User/index/uid/1.html\",\n" +
+                "                        \"space_url\": \"/opensns/api.php?s=/Ucenter/Index/index/uid/1.html\",\n" +
+                "                        \"title\": \"Lv3 转正\",\n" +
+                "                        \"uid\": \"1\",\n" +
+                "                        \"weibocount\": \"24\"\n" +
+                "                    }\n" +
+                "                }\n" +
+                "            ],\n" +
                 "            \"activity\": \"0\",\n" +
                 "            \"allow_user_group\": \"\",\n" +
                 "            \"background\": false,\n" +
@@ -113,6 +248,41 @@ public class ApptoxServlet extends HttpServlet {
                 "            }\n" +
                 "        },\n" +
                 "        {\n" +
+                "            \"GroupCreator\": {\n" +
+                "                \"uid\": \"102\"\n" +
+                "            },\n" +
+                "            \"GroupMenmber\": [\n" +
+                "                {\n" +
+                "                    \"activity\": \"0\",\n" +
+                "                    \"create_time\": \"1456466209\",\n" +
+                "                    \"group_id\": \"9\",\n" +
+                "                    \"id\": \"15\",\n" +
+                "                    \"isCreator\": \"1\",\n" +
+                "                    \"last_view\": \"1456797151\",\n" +
+                "                    \"position\": \"3\",\n" +
+                "                    \"status\": \"1\",\n" +
+                "                    \"uid\": \"102\",\n" +
+                "                    \"update_time\": \"1456466209\",\n" +
+                "                    \"user\": {\n" +
+                "                        \"avatar128\": \"/opensns/Public/images/default_avatar_128_128.jpg\",\n" +
+                "                        \"avatar256\": \"/opensns/Public/images/default_avatar_256_256.jpg\",\n" +
+                "                        \"avatar32\": \"/opensns/Public/images/default_avatar_32_32.jpg\",\n" +
+                "                        \"avatar512\": \"/opensns/Public/images/default_avatar_512_512.jpg\",\n" +
+                "                        \"avatar64\": \"/opensns/Public/images/default_avatar_64_64.jpg\",\n" +
+                "                        \"fans\": \"0\",\n" +
+                "                        \"following\": \"0\",\n" +
+                "                        \"nickname\": \"tangdejun\",\n" +
+                "                        \"real_nickname\": \"tangdejun\",\n" +
+                "                        \"score1\": \"100\",\n" +
+                "                        \"space_link\": \"tangdejun\",\n" +
+                "                        \"space_mob_url\": \"/opensns/index.php?s=/mob/user/index/uid/102.html\",\n" +
+                "                        \"space_url\": \"/opensns/index.php?s=/ucenter/index/index/uid/102.html\",\n" +
+                "                        \"title\": \"Lv3 转正\",\n" +
+                "                        \"uid\": \"102\",\n" +
+                "                        \"weibocount\": \"4\"\n" +
+                "                    }\n" +
+                "                }\n" +
+                "            ],\n" +
                 "            \"activity\": \"0\",\n" +
                 "            \"allow_user_group\": \"\",\n" +
                 "            \"background\": false,\n" +
