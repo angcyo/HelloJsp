@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<web-app version="3.1"
          xmlns="http://xmlns.jcp.org/xml/ns/javaee"
-         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
-         version="3.1">
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
 
     <display-name>Hello Jsp By Angcyo</display-name>
 
@@ -19,25 +19,25 @@
 
     <!--过滤器的配置-->
     <!--<filter>-->
-        <!--<filter-name>FirstFilter</filter-name>-->
-        <!--<filter-class>com.angcyo.filter.FilterDemo</filter-class>-->
+    <!--<filter-name>FirstFilter</filter-name>-->
+    <!--<filter-class>com.angcyo.filter.FilterDemo</filter-class>-->
     <!--</filter>-->
     <!--<filter-mapping>-->
-        <!--<filter-name>FirstFilter</filter-name>-->
-        <!--<url-pattern>/*</url-pattern>-->
+    <!--<filter-name>FirstFilter</filter-name>-->
+    <!--<url-pattern>/*</url-pattern>-->
     <!--</filter-mapping>-->
 
     <!--<filter>-->
-        <!--<filter-name>EncodingFilter</filter-name>-->
-        <!--<filter-class>com.angcyo.filter.EncodingFilter</filter-class>-->
-        <!--<init-param>-->
-            <!--<param-name>encode</param-name>-->
-            <!--<param-value>utf-8</param-value>-->
-        <!--</init-param>-->
+    <!--<filter-name>EncodingFilter</filter-name>-->
+    <!--<filter-class>com.angcyo.filter.EncodingFilter</filter-class>-->
+    <!--<init-param>-->
+    <!--<param-name>encode</param-name>-->
+    <!--<param-value>utf-8</param-value>-->
+    <!--</init-param>-->
     <!--</filter>-->
     <!--<filter-mapping>-->
-        <!--<filter-name>EncodingFilter</filter-name>-->
-        <!--<url-pattern>/*</url-pattern>-->
+    <!--<filter-name>EncodingFilter</filter-name>-->
+    <!--<url-pattern>/*</url-pattern>-->
     <!--</filter-mapping>-->
 
     <!--配置错误页面-->
@@ -70,7 +70,7 @@
         <servlet-name>BaseServlet</servlet-name>
         <url-pattern>/base</url-pattern>
     </servlet-mapping>
-    
+
     <servlet>
         <servlet-name>LoginServlet</servlet-name>
         <servlet-class>com.angcyo.servlet.LoginServlet</servlet-class>
@@ -79,6 +79,8 @@
         <servlet-name>LoginServlet</servlet-name>
         <url-pattern>/loginServlet</url-pattern>
     </servlet-mapping>
+
+    <!--Servlet测试专用-->
     <servlet>
         <servlet-name>ApptoxServlet</servlet-name>
         <servlet-class>com.angcyo.servlet.ApptoxServlet</servlet-class>
@@ -86,5 +88,32 @@
     <servlet-mapping>
         <servlet-name>ApptoxServlet</servlet-name>
         <url-pattern>/apptox.app</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Apptox2Servlet</servlet-name>
+        <servlet-class>com.angcyo.servlet.Apptox2Servlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Apptox2Servlet</servlet-name>
+        <url-pattern>/apptox2.app</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Apptox3Servlet</servlet-name>
+        <servlet-class>com.angcyo.servlet.Apptox3Servlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Apptox3Servlet</servlet-name>
+        <url-pattern>/apptox3.app</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Apptox4Servlet</servlet-name>
+        <servlet-class>com.angcyo.servlet.Apptox4Servlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Apptox4Servlet</servlet-name>
+        <url-pattern>/apptox4.app</url-pattern>
     </servlet-mapping>
 </web-app>
