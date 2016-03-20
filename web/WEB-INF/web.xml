@@ -62,6 +62,16 @@
         <url-pattern>/hello/*</url-pattern>
     </servlet-mapping>
 
+    <!--Android Api Test-->
+    <servlet>
+        <servlet-name>ApiServlet</servlet-name>
+        <servlet-class>com.angcyo.servlet.ApiServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ApiServlet</servlet-name>
+        <url-pattern>/api/*</url-pattern>
+    </servlet-mapping>
+
     <servlet>
         <servlet-name>BaseServlet</servlet-name>
         <servlet-class>com.angcyo.servlet.BaseServlet</servlet-class>
