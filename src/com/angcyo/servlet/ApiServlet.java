@@ -27,8 +27,13 @@ public class ApiServlet extends HttpServlet {
         String parameter = "no";
         if (isGet(request)) {
             parameter = parseGetParamJson(request);
+
+            p.println("GET->" + parameter);
+
         } else if (isPost(request)) {
             parameter = parsePostParamJson(request);
+
+            p.println("POST->" + parameter);
         }
 
         if (TextUtils.isEmpty(parameter)) {
@@ -136,7 +141,10 @@ public class ApiServlet extends HttpServlet {
         StringBuilder builder = new StringBuilder("{");
         Map<String, String[]> parameterMap = request.getParameterMap();
         for (Map.Entry<String, String[]> map : parameterMap.entrySet()) {
-            builder.append("\"").append(map.getKey()).append("\"").append(":").append(map.getValue()[0]).append(",");
+            builder.append("\"").append(map.getKey()).append("\"")
+                    .append(":")
+                    .append("\"").append(map.getValue()[0]).append("\"")
+                    .append(",");
         }
 
         int length = builder.length();
